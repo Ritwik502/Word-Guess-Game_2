@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Rectangular Blocks</title>
+    <title>Word Guess 2</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <div class="container">
         <div class="block">
-            <h2>Block 1</h2>
-            <p>This is the content of the first rectangular block.</p>
+            <h2>RULES:</h2>
+        <div class="rules">
+          <ul>
+           <li> Create a word from the given characters.</li>
+            <li>You can use the characters any number of times.</li>
+            <li>Bonus for guessing longer words.</li>
+            <li>Once you have entered a word with N characters you can only entre words simmilar or bigger in length.</li>
+            <li>Enter word within 30 seconds.</li>
+          </ul>
+        </div>
         </div>
 
         <div class="block">
-            <h2>Block 2</h2>
-            <p>This is the content of the second rectangular block.</p>
+            <h2>Word Guess</h2>
+        <div class="content">
+          <p class="word"></p>
+          <div class="details">
+            <p id="hint-txt">Hint:</p>
+            <p class="time">
+              Time Left: <span><b>30</b>s</span>
+            </p>
+          </div>
+          <input
+            type="text"
+            spellcheck="false"
+            placeholder="Enter a valid word"
+          />
+          <div class="buttons">
+            <button class="refresh-word" id="refresh-word">show Hint</button>
+            <button class="check-word">Check Word</button>
+          </div>
+          <div class="score">
+            <div class="scoreBox">score : <span></span></div>
+            <div class="highscoreBox">Highscore : <span></span></div>
+            <div class="globalhighscor"><p>Gobal Highscore</p> <span></span></div>
+          </div>
+        </div>
         </div>
     </div>
 

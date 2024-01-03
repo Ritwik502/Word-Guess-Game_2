@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width:98%;
     max-width: 960px;
     background-color: #fff;
     border-radius: 8px;
@@ -29,10 +29,11 @@ body {
     margin: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .container {
         flex-direction: column;
         align-items: center;
+        max-width: 450px;
     }
 
     .block {
