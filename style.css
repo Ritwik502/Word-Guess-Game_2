@@ -28,7 +28,32 @@ body {
     box-sizing: border-box;
     margin: 10px;
 }
-
+.buttons button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+  }
+.buttons button:active{
+    transform: scale(0.97);
+  }
+  .buttons .refresh-word{
+    background: #022919;
+  }
+  .buttons .refresh-word:hover{
+    background: #000000;
+  }
+  .buttons .check-word{
+    background: #ba2d0b;
+  }
+  .buttons .check-word:hover{
+    background: #7e0b0b;
+  }
 @media (max-width: 800px) {
     .container {
         flex-direction: column;
