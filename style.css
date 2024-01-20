@@ -11,22 +11,26 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width:98%;
+    /* height: 80%; */
     max-width: 960px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin:10% 0 10% 0;
+    /* padding */
 }
 
 .block {
-    width: 45%;
+    width: 47%;
     padding: 20px;
     background-color: #333;
     color: #fff;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 2% 2%;
+    border-radius: 7px;
 }
 .buttons button{
     border: none;
